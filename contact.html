@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome AI | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Welcome AI Home">
+        <img
+          class="logo"
+          src="assets/logo.png"
+          srcset="assets/logo.png 1x, assets/logo@2x.png 2x"
+          width="44"
+          height="44"
+          alt="Welcome AI logo"
+        />
+        <span class="brand-text">Welcome AI</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+       <button id="themeToggle" class="theme-toggle">
+  Light mode
+</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container center-stack">
+        <h1>Contact Us</h1>
+        <p class="lead">Have a question? Send a message and we’ll get back to you.</p>
+
+        <!-- Formspree form -->
+        <form
+          class="form card"
+          action="https://formspree.io/f/xovgzlpd"
+          method="POST"
+        >
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Product question</option>
+              <option>Pricing</option>
+              <option>Partnership</option>
+              <option>Support</option>
+              <option>Schedule Consultation</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <!-- Optional: helps organize submissions -->
+          <input type="hidden" name="_subject" value="Welcome AI Contact Form Submission" />
+
+          <button class="btn" type="submit">Send Message</button>
+  
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Welcome AI</p>
+      <p><a href="about.html">About</a> • <a href="faq.html">FAQ</a> • <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+</body>
+</html>

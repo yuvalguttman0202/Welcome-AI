@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome AI | About</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Welcome AI Home">
+        <img
+          class="logo"
+          src="assets/logo.png"
+          srcset="assets/logo.png 1x, assets/logo@2x.png 2x"
+          width="44"
+          height="44"
+          alt="Welcome AI logo"
+        />
+        <span class="brand-text">Welcome AI</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+
+      </nav>
+       <button id="themeToggle" class="theme-toggle">
+  Light mode
+</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container center-stack">
+        <h1>About Welcome AI</h1>
+        <p class="lead">
+          Welcome AI is an intelligent customer service assistant that helps businesses automate support,
+          bookings, and customer interactions 24/7.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="founders">
+      <div class="container center-stack">
+        <h2>Founders</h2>
+        <p class="lead">Meet the team behind the product.</p>
+
+        <div class="grid2">
+          <article class="card center-card">
+            <img
+  class="avatar"
+  src="assets/founder1.jpg"
+  srcset="assets/founder1.jpg 1x, assets/founder1@2x.jpg 2x"
+  width="700"
+  height="700"
+  alt="Photo of Founder 1"
+  loading="lazy"
+/>
+
+            
+            <h3>Charles Greenberg</h3>
+            <p>Economics Major at NYU who is determined to expand sales team and establish the east coast presence. </p>
+          </article>
+
+          <article class="card center-card">
+            <img
+  class="avatar"
+  src="assets/founder2.jpg"
+  srcset="assets/founder2.jpg 1x, assets/founder2@2x.jpg 2x"
+  width="700"
+  height="700"
+  alt="Photo of Founder 2"
+  loading="lazy"
+/>
+
+          
+            <h3>James Cunningham</h3>
+            <p>Finance Major at Santa Clara who Developed Restaurant AI technology and is committed to building the future of AI-driven tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="video">
+      <div class="container center-stack">
+        <h2>Product Demo Video</h2>
+        <p class="lead">A real conversation with the product.</p>
+
+        <video class="video" controls preload="metadata" width="960">
+          <source src="assets/demo.mp4" type="video/mp4" />
+          Sorry, your browser does not support embedded video.
+        </video>
+
+ 
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Welcome AI</p>
+      <p><a href="about.html">About</a> • <a href="faq.html">FAQ</a> • <a href="contact.html">Contact</a></p>
+
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome AI | FAQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Welcome AI Home">
+        <img
+          class="logo"
+          src="assets/logo.png"
+          srcset="assets/logo.png 1x, assets/logo@2x.png 2x"
+          width="44"
+          height="44"
+          alt="Welcome AI logo"
+        />
+        <span class="brand-text">Welcome AI</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="contact.html">Contact</a>
+
+      </nav>
+       <button id="themeToggle" class="theme-toggle">
+  Light mode
+</button>
+    </div>
+  </header>
+
+  <main id="main">
+   <section class="section">
+  <div class="container faq-hero">
+    
+    
+    <img
+      class="faq-img"
+      src="assets/restaurant1.jpg"
+      srcset="assets/restaurant1.jpg 1x, assets/restaurant1.jpg 2x"
+      width="500"
+      height="350"
+      alt="Happy customers enjoying a restaurant"
+      loading="lazy"
+    />
+
+    <!-- Center text -->
+    <div class="faq-center">
+      <h1>FAQs</h1>
+      <p class="lead">Common questions about Welcome AI.</p>
+      
+    </div>
+
+    
+    <img
+      class="faq-img"
+      src="assets/ai1.jpg"
+      srcset="assets/ai1.jpg 1x, assets/ai1.jpg 2x"
+      width="500"
+      height="350"
+      alt="AI-powered customer service interface"
+      loading="lazy"
+    />
+
+  </div>
+</section>
+
+
+    <section class="section" id="faq-list">
+      <div class="container center-stack">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="accordion" data-accordion>
+          <button class="acc-btn" aria-expanded="true" aria-controls="a1" id="q1">
+            What is Welcome AI?
+          </button>
+          <div class="acc-panel" id="a1" role="region" aria-labelledby="q1">
+            <p>
+              Welcome AI is an intelligent customer service assistant that helps businesses automate support,
+              bookings, and customer interactions 24/7, by connecting to a business phone number and answering any calls.
+            </p>
+          </div>
+
+          <button class="acc-btn" aria-expanded="false" aria-controls="a2" id="q2">
+            How does Welcome AI improve customer service?
+          </button>
+          <div class="acc-panel" id="a2" role="region" aria-labelledby="q2" hidden>
+            <p>
+              It responds quickly and consistently, helps manage reservations and appointments, and reduces
+              missed inquiries—improving customer experience.
+            </p>
+          </div>
+
+          <button class="acc-btn" aria-expanded="false" aria-controls="a3" id="q3">
+            Can Welcome AI integrate with my existing tools?
+          </button>
+          <div class="acc-panel" id="a3" role="region" aria-labelledby="q3" hidden>
+            <p>Yes, integrates with OpenTable Resi and other services to come!</p>
+          </div>
+
+          <button class="acc-btn" aria-expanded="false" aria-controls="a4" id="q4">
+            Is my customer data secure?
+          </button>
+          <div class="acc-panel" id="a4" role="region" aria-labelledby="q4" hidden>
+            <p>Data is secured with full guarantee on data safety.</p>
+          </div>
+
+          <button class="acc-btn" aria-expanded="false" aria-controls="a5" id="q5">
+            Do I need technical skills to use Welcome AI?
+          </button>
+          <div class="acc-panel" id="a5" role="region" aria-labelledby="q5" hidden>
+            <p>You do not need technical skills. The AI integrates in a white glove setup style with our team seamlessly inputting the system into the servers.</p>
+          </div>
+
+          <button class="acc-btn" aria-expanded="false" aria-controls="a6" id="q6">
+            Can Welcome AI handle multiple languages?
+          </button>
+          <div class="acc-panel" id="a6" role="region" aria-labelledby="q6" hidden>
+            <p>Welcome AI can handle any language and is fully customizable to the needs of a given establishment.</p>
+          </div>
+
+          <button class="acc-btn" aria-expanded="false" aria-controls="a7" id="q7">
+            What types of tasks can Welcome AI automate?
+          </button>
+          <div class="acc-panel" id="a7" role="region" aria-labelledby="q7" hidden>
+            <p>
+              It can automate support questions, reservations, appointment scheduling, and any other customer to business interactions over the phone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Welcome AI</p>
+      <p><a href="about.html">About</a> • <a href="faq.html">FAQ</a> • <a href="contact.html">Contact</a></p>
+
+    </div>
+  </footer>
+</body>
+</html>
